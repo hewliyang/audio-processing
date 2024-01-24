@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "audio-processing"
+version = "0.1.0"
+description = ""
+authors = ["hewliyang <hewliyang@u.nus.edu>"]
+readme = "README.md"
+packages = [{include = "audio_processing"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.3"
+pandas = "^2.2.0"
+librosa = "^0.10.1"
+matplotlib = "3.7"
+datasets = {extras = ["audio"], version = "^2.16.1"}
+transformers = "^4.37.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
